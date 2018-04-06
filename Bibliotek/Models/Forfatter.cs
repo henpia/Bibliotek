@@ -11,5 +11,6 @@ namespace Bibliotek.Models
         public string Navn { get; set; }
         public string Beskrivelse { get; set; }
 
+        public IList<Bog> Boeger { get; set; }
     }
 }

@@ -10,5 +10,6 @@ namespace Bibliotek.Models
         public int GenreId { get; set; }
         public string Navn { get; set; }
 
+        public IList<Bog> Boeger { get; set; }
     }
 }

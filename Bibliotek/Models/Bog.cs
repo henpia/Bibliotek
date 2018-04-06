@@ -12,9 +12,8 @@ namespace Bibliotek.Models
         public string Beskrivelse { get; set; }
         public string ImageURL { get; set; }
 
-        // Links til Genre- og Forfatter-tabeller
-        public int GenreId { get; set; }
-        public int ForfatterId { get; set; }
+        public Genre Genre { get; set; }
+        public Forfatter Forfatter { get; set; }
 
     }
 }
