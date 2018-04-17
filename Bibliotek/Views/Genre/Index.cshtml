@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<Bibliotek.Models.Genre>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Genrer";
 }
 
-<h2>Index</h2>
+<h2>Liste over @ViewBag.Title</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Opret ny Genre", "Create")
 </p>
-<table class="table">
+<table class="table tableGenrer">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Navn)
@@ -23,9 +23,9 @@
             @Html.DisplayFor(modelItem => item.Navn)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GenreId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GenreId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GenreId })
+            @Html.ActionLink("Ret", "Edit", new { id=item.GenreId }) |
+            @Html.ActionLink("Detaljer", "Details", new { id=item.GenreId }) |
+            @Html.ActionLink("Slet", "Delete", new { id=item.GenreId })
         </td>
     </tr>
 }
