@@ -203,6 +203,10 @@
     <Compile Include="Migrations\201804100717088_Initial Migration.Designer.cs">
       <DependentUpon>201804100717088_Initial Migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804170818562_Tilføjet Annotations for table names.cs" />
+    <Compile Include="Migrations\201804170818562_Tilføjet Annotations for table names.Designer.cs">
+      <DependentUpon>201804170818562_Tilføjet Annotations for table names.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BibliotekContext.cs" />
@@ -345,6 +349,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804100717088_Initial Migration.resx">
       <DependentUpon>201804100717088_Initial Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804170818562_Tilføjet Annotations for table names.resx">
+      <DependentUpon>201804170818562_Tilføjet Annotations for table names.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
