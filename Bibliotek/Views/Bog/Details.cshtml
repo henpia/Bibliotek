@@ -1,13 +1,12 @@
 ﻿@model Bibliotek.Models.Bog
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detaljer om Bog";
 }
 
-<h2>Details</h2>
+<h2>@ViewBag.Title</h2>
 
 <div>
-    <h4>Bog</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -37,6 +36,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BogId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Ret", "Edit", new { id = Model.BogId }) |
+    @Html.ActionLink("Tilbage til Bøger", "Index")
 </p>

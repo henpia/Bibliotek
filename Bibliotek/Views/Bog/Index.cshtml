@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Bibliotek.Models.Bog>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Liste over Bøger";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Opret ny Bog", "Create")
 </p>
 <table class="table">
     <tr>
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.ImageURL)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BogId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BogId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BogId })
+            @Html.ActionLink("Ret", "Edit", new { id=item.BogId }) |
+            @Html.ActionLink("Detaljer", "Details", new { id=item.BogId }) |
+            @Html.ActionLink("Slet", "Delete", new { id=item.BogId })
         </td>
     </tr>
 }
